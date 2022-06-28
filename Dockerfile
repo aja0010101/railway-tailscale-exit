@@ -21,5 +21,5 @@ RUN mkdir -p /var/cache/tailscale
 RUN mkdir -p /var/lib/tailscale
 
 # Run on container startup.
-USER root
+# USER root
 CMD ["/app/start.sh"]
