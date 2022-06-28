@@ -22,4 +22,5 @@ RUN mkdir -p /var/lib/tailscale
 
 # Run on container startup.
 USER root
+RUN chmod +x /app/start.sh
 CMD /app/start.sh
