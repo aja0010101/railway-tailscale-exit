@@ -4,6 +4,5 @@
 until /app/tailscale up --authkey=${TAILSCALE_AUTHKEY} --hostname=railway-app --advertise-exit-node; do
   sleep 0.1
 done
-export ALL_PROXY=socks5://localhost:1055/
 sleep infinity 
-echo Tailscale started
+echo "Tailscale started"
